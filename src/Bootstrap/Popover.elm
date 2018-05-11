@@ -179,8 +179,6 @@ view state ((Config { triggerElement }) as config) =
 popoverView : State -> Config msg -> Html.Html msg
 popoverView (State { isActive, domState }) (Config config) =
     let
-        _ =
-            Debug.log "DomState: " domState
 
         px f =
             (toString f) ++ "px"
